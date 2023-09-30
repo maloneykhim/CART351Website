@@ -413,4 +413,6 @@ img {
     display: list-item;
     padding-left: 12px;
     list-style-type: "✎";
+    text-decoration: none;
+    cursor: pointer;
 }
