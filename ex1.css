@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(34, 24, 32);
+}
+
+h2 {
+    font-family: 'sans-serif', 'Sansita';
+    color: rgb(255, 194, 244);
+    text-align: center;
+    position: relative;
+    top: 75vh;
+}
+
+.stick {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.handle {
+    position: absolute;
+    width: 15px;
+    height: 300px;
+    background-color: #e367be; /* Brown color for the handle */
+    border-radius: 10px;
+}
+
+#clickBubble {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 245%); 
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.152); /* White color with slight transparency for the bubble */
+    border: 10px solid #e367be; /* Color and thickness of the border */
+    border-radius: 50%;
+    cursor: pointer; /* Add this to indicate that it's clickable */
+    z-index: 999;
+}
+
+
+.circle {
+    width: 50px; /* Adjust the size of the circle as needed */
+    height: 50px; /* Adjust the size of the circle as needed */
+    border-radius: 50%; /* Make it a circle */
+    position: absolute;
+}

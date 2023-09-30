@@ -387,3 +387,30 @@ img {
     }
 }
 
+
+/* List of exercices Section */
+
+.exercise__container{
+    padding: 15vh;
+}
+
+.exercises__heading {
+    font-size: 4rem;
+    font-weight:800;
+    margin-bottom: 24px;
+    color: #713e79;
+    width: 650px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+
+}
+
+li {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 48px;
+    display: list-item;
+    padding-left: 12px;
+    list-style-type: "✎";
+}
