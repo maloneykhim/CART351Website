@@ -373,7 +373,7 @@
     }
     
     img {
-        height: 55vh;
+        height: 35vh;
     }
     
       @media screen and (max-width: 768px) {
@@ -421,6 +421,7 @@
     body.project__body {
         min-height: 100vh;
         background: #ece5e9;
+        overflow-x: hidden
     }
     
     .project__container{
@@ -447,5 +448,13 @@
         font-size: 1rem;
         font-weight: 400;
     }
+
+    .storyboard__box {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
     
     
