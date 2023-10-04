@@ -8,7 +8,7 @@ scroll-behavior: smooth;
 
 /* Animated gradients */
 
-body {
+body.main__body {
     overflow: hidden;
     min-height: 100vh;
     background: #ece5e9;
@@ -416,3 +416,36 @@ img {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Project Section */
+
+body.project__body {
+    min-height: 100vh;
+    background: #ece5e9;
+}
+
+.project__container{
+    padding: 15vh;
+}
+
+.project__heading {
+    font-size: 2rem;
+    font-weight:800;
+    margin-bottom: 24px;
+    color: #713e79;
+    width: 1000px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+
+.project__question _{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project__information {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
