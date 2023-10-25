@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh; 
+    background: linear-gradient(to bottom, #150024c3 0%, #cfb0e0 75%);
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+  }
+
+.grid img {
+    opacity: 0.2;
+}
+
+
+  .streamerInterface {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 537px; /* Set the height of your rectangle */
+    width: 955px;; /* Set the width of your rectangle */
+    background-color: #F3E2F7; /* Set the background color */
+    border-radius: 15px; /* Adjust the border-radius to control the roundness of the corners */
+    border: solid #7F79C6 5px;
+    color: #150024c3; /* Text color */
+    font-family: 'Nunito';
+    text-align: center; /* Center the text */
+    line-height: 100px; /* Vertically center the text */
+    font-size: 18px;
+}
+
+.streamerInterface__camera {
+    position: absolute;
+    top: 56%;
+    left: 57.8%;
+    height: 160px; /* Set the height of your rectangle */
+    width: 305px; /* Set the width of your rectangle */
+    background: rgba(128, 74, 143, 0.75); /* Change opacity here (0.5 = 50% opacity) */
+    border-radius: 10px; /* Adjust the border-radius to control the roundness of the corners */
+    border: solid white 5px;
+    overflow: hidden; /* Clip the image to the div's dimensions */
+}
+
+
+.streamerInterface__camera img {
+    position: relative;
+    left: 20%;
+    max-width: 100%; /* Ensure the image doesn't exceed the div's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the div's height */
+    transform: scale(1.3); /* Adjust the scaling factor to zoom in (e.g., 1.2 for 120%) */
+    transform-origin: center; /* Set the transformation origin to the center */
+}
+
+.chatBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(200%,-50%);
+    height: 550px; /* Set the height of your rectangle */
+    text-align: center; /* Center the text */
+    line-height: 100px; /* Vertically center the text */
+    font-size: 18px;
+}
+
+.chatBox img {
+    max-width: 100%; /* Ensure the image doesn't exceed the div's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the div's height */
+}
+
+.cameraDecoration {
+    position: absolute;
+    top: 55%;
+    left: 57%;
+}
+
+.cameraDecoration img{
+    height: 200px;
+}
+
+.interfaceDecoration {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.interfaceDecoration2 {
+    position: absolute;
+    top: 20%;
+    left: 2.5%;
+    height: 30%;
+}
+
+.interfaceDecoration2 img {
+    height: 25%;
+}
+
+.interfaceDecoration3 {
+    position: absolute;
+    top: 60%;
+    left: 2.5%;
+    height: 30%;
+}
+
+.interfaceDecoration3 img {
+    height: 25%;
+}
+
+
+
+
+.descriptionInterface {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 350%);
+    background: rgba(255, 255, 255, 0.75); /* Change opacity here (0.5 = 50% opacity) */
+    height: 10vh;
+    width: 955px;
+    border-radius: 10px;
+}
+
+#dropdown {
+    position: relative;
+    top: -25%;
+    width: 100%;
+    margin-left: 17px;
+
+}
+
+h2 {
+    color: #7F79C6;
+    margin-left: 20px;
+    position: relative;
+}
+
+select {
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+    color: #333;
+    cursor: pointer;  
+    outline: none; /* Remove the focus border */
+}
+
+#button {
+    position: relative;
+    width: 200px;
+    left: 50%;
+    top: -90%;
+    transition-duration: 0.4s;
+}
+
+#button-submit {
+    width: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    background: #C978DD;
+    color: #F3E2F7;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;  
+}
+
+#button-submit:hover{
+    background: #B266C4;
+    
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 - Gaming Session</title>
+    <link rel="stylesheet" href="ex2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&family=Sansita&display=swap" rel="stylesheet">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div class="grid">
+        <img src="gridv2.png" alt="">
+    </div>
+
+    <div class="streamerInterface">
+        <div id="videoContainer">
+            <iframe id="youtubeVideo" width="955" height="537" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>          
+    </div>
+
+    <div class="chatBox">
+        <img src="chatboxv4.png" alt="">
+    </div>
+
+    <div class="streamerInterface__camera">
+        <img src="malo.gif" alt="">
+    </div>
+    
+    <div class="cameraDecoration"><img src="overlay-cam-v3.png" alt=""></div>
+    <div class="interfaceDecoration"><img src="main-title_1.png" alt=""></div>
+    <div class="interfaceDecoration2"><img src="gamedescription.png" alt=""></div>
+    <div class="interfaceDecoration3"><img src="myplaythrough.png" alt=""></div>
+    
+
+    <div class="descriptionInterface">
+        <h2>Maloney's Daily Gaming Record</h2>
+
+        <div id="dropdown" class="custom-select">
+    
+            <select name="day-choices" id="day-choices">
+                <option id = "choice-0">Pick a date</option>
+                <option id = "choice-1" value="October 9 2023">October 9 2023</option>
+                <option id = "choice-2" value="October 10 2023">October 10 2023</option>
+                <option id = "choice-3" value="October 11 2023">October 11 2023</option>
+                <option id = "choice-4" value="October 12 2023">October 12 2023</option>
+            </select>
+            
+        </div>
+        
+        <div id="button">
+            <button id = "button-submit">Submit</button>
+        </div>
+
+    </div>
+    <script src = "ex2.js"></script>
+</body>
+</html>
+
