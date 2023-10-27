@@ -29,28 +29,53 @@ document.getElementById("button-submit").addEventListener("click", function () {
         console.log(selectedData.gameVideo);
         console.log(selectedData);
 
-        // // Create a new div for the type content
-        // // Get the newly-created div
-        // const typeContent = document.createElement("div");
-        // typeContent.className = "typeContent";
-        // typeContent.innerHTML = selectedData.game.type;        
+        // Create a new div for the type content
+        // Get the newly-created div
+        const typeContent = document.createElement("div");
+        typeContent.className = "typeContent";
+        typeContent.innerHTML = `Type: ${selectedData.game.type} <br> Developper: ${selectedData.game.creator} <br> Plot: ${selectedData.game.steamDescription}`      
 
 
-        // // Change the style of the type content div
-        // typeContent.style.backgroundColor = "#bb84da"; // Change the background color
-        // typeContent.style.opacity = "rgba(128, 74, 143, 0.75)"; // Change the background color
-        // typeContent.style.borderRadius = "20px"; // Change the background color
-        // typeContent.style.width = "200px"; // Change the width
-        // typeContent.style.color = "#333"; // Change the text color
-        // typeContent.style.fontSize = "14px"; // Set the font size
-        // typeContent.style.padding = "10px"; // Add padding
-        // typeContent.style.lineHeight = "1.5"; // Change line height
-        // typeContent.style.textAlign = "left";
+        // Change the style of the type content div
+        typeContent.style.color = "#333"; 
+        typeContent.style.fontSize = "14px"; 
+        typeContent.style.padding = "10px"; 
+        typeContent.style.lineHeight = "1.5"; 
+        typeContent.style.textAlign = "left";
                 
-        // // Position the type content div within streamerInterface
-        // typeContent.style.position = "absolute";
-        // typeContent.style.top = "10%"; 
-        // typeContent.style.left = "5%"; 
+        // Position the type content div within gameInfobox
+        typeContent.style.position = "relative";
+        typeContent.style.top = "5%"; 
+        typeContent.style.left = "4%"; 
+
+
+
+        // Create a new div for the type content
+        // Get the newly-created div
+        const playContent = document.createElement("div");
+        playContent.className = "playContent";
+        playContent.innerHTML = `Time played: ${selectedData.game.timeSpent} <br> ${selectedData.game.whatIDid} <br>`      
+
+
+        // Change the style of the type content div
+        playContent.style.color = "#333"; 
+        playContent.style.fontSize = "14px"; 
+        playContent.style.padding = "10px"; 
+        playContent.style.lineHeight = "1.5"; 
+        playContent.style.textAlign = "left";
+                
+        // Position the type content div within playthroughInfobox
+        playContent.style.position = "relative";
+        playContent.style.top = "5%"; 
+        playContent.style.left = "4%"; 
+
+
+
+
+
+
+
+
 
 
           // Create a new div for the chat content
@@ -62,24 +87,24 @@ document.getElementById("button-submit").addEventListener("click", function () {
         // Change the style of the chat comment div
         chatContent.style.backgroundColor = "transparent"; // Change the background color
         chatContent.style.width = "200px"; // Change the width
-        chatContent.style.color = "#333"; // Change the text color
-        chatContent.style.fontSize = "14px"; // Set the font size
-        chatContent.style.padding = "10px"; // Add padding
-        chatContent.style.lineHeight = "1.5"; // Adjust as needed
+        chatContent.style.color = "#333"; 
+        chatContent.style.fontSize = "14px"; 
+        chatContent.style.padding = "10px"; 
+        chatContent.style.lineHeight = "1.5"; 
         chatContent.style.textAlign = "left";
         
         // Position the chatContent div within chatBox
         chatContent.style.position = "relative";
-        chatContent.style.top = "-95%"; // Adjust as needed
-        chatContent.style.left = "9%"; // Adjust as needed
+        chatContent.style.top = "-95%"; 
+        chatContent.style.left = "9%"; 
         
         // Wrap the first word in a <span> element and apply different styles
         const words = selectedData.game.myComments.split(' ');
         if (words.length > 1) {
             // Create a <span> for the first word
             const firstWordSpan = document.createElement("span");
-            firstWordSpan.style.color = "#B266C4"; // Change the color
-            firstWordSpan.style.fontWeight = "800"; // Change the font-weight
+            firstWordSpan.style.color = "#B266C4"; 
+            firstWordSpan.style.fontWeight = "800"; 
             firstWordSpan.textContent = words[0];
         
             // Replace the first word with the <span> in the chatContent div
@@ -90,8 +115,11 @@ document.getElementById("button-submit").addEventListener("click", function () {
         document.querySelector(".chatBox").appendChild(chatContent);
                 
         
-        // Append the type content to the streamerInterface div
-                document.querySelector(".streamerInterface").appendChild(typeContent);
+        // Append the type content to the gameInfobox div
+        document.querySelector(".gameInfobox").appendChild(typeContent);
+
+        // Append the type content to the gameInfobox div
+        document.querySelector(".playthroughInfobox").appendChild(playContent);
 
     
     } else {

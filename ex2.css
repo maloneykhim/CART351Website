@@ -1,3 +1,5 @@
+/*Background*/
+
 body {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@ body {
     opacity: 0.2;
 }
 
+/*Streamer Video Interface*/
 
   .streamerInterface {
     position: absolute;
@@ -53,17 +56,6 @@ body {
     transform-origin: center; /* Set the transformation origin to the center */
 }
 
-.chatBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(200%,-50%);
-    height: 550px; /* Set the height of your rectangle */
-    text-align: center; /* Center the text */
-    line-height: 100px; /* Vertically center the text */
-    font-size: 18px;
-}
-
 .chatBox img {
     max-width: 100%; /* Ensure the image doesn't exceed the div's width */
     max-height: 100%; /* Ensure the image doesn't exceed the div's height */
@@ -79,6 +71,23 @@ body {
     height: 200px;
 }
 
+
+/*Chatbox Interface*/
+
+.chatBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(200%,-50%);
+    height: 550px; /* Set the height of your rectangle */
+    text-align: center; /* Center the text */
+    line-height: 100px; /* Vertically center the text */
+    font-size: 18px;
+}
+
+
+/*Side boxes Interface*/
+
 .interfaceDecoration {
     position: absolute;
     top: 2%;
@@ -88,7 +97,7 @@ body {
 
 .interfaceDecoration2 {
     position: absolute;
-    top: 20%;
+    top: 18%;
     left: 2.5%;
     height: 30%;
 }
@@ -108,15 +117,38 @@ body {
     height: 25%;
 }
 
+.gameInfobox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-308%, -73%);
+    height: 30vh; 
+    width: 15vw;
+    background-color: #F3E2F7;
+    border-radius: 15px; 
+    border: solid #7F79C6 5px;
+}
 
+.playthroughInfobox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-308%, 75%);
+    height: 25vh; 
+    width: 15vw;
+    background-color: #F3E2F7;
+    border-radius: 15px; 
+    border: solid #7F79C6 5px;
+}
 
+/*Streaming Description Interface*/
 
 .descriptionInterface {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 350%);
-    background: rgba(255, 255, 255, 0.75); /* Change opacity here (0.5 = 50% opacity) */
+    background: rgba(255, 255, 255, 0.75);
     height: 10vh;
     width: 955px;
     border-radius: 10px;
