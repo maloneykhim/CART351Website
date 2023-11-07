@@ -1,0 +1,90 @@
+body {
+    background-image: url(prototype-bg.png);
+    background-size: 100%;
+    overflow: hidden;
+    font-family: 'Lexend', sans-serif;
+}
+  
+/* Center the container both vertically and horizontally */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -47%);
+    display: flex;
+    align-items: center; /* Center vertically */
+    height: 60vh; 
+    width: 50vw;
+  }
+
+.welcomeItem {
+    padding-left: 50px;
+    padding-bottom: 75px;
+}
+
+.welcomeImage {
+    height: 45vh;
+}
+
+.welcomeText {
+    padding-right: 50px;
+    max-width: 350px;
+}
+
+.welcomeTitle1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #8C2540;
+    margin: 0;
+}
+
+.welcomeTitle2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #8C2540;
+    margin: 0;
+}
+  
+
+.welcomeButtons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -7%);
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    height: 60vh;
+    width: 50vw;
+}
+
+.welcomeButton {
+    background-color: #BBD9FF; 
+    border: 3px solid #4062B8;
+    border-radius: 4px;
+    color: black;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.welcomeButton.no1 {
+    margin-left: 50px;    
+}
+
+.welcomeButton.no2 {
+    margin-right: 50px;    
+}
+
+.welcomeButton:hover {
+    background-color: #F5DADA; 
+    border: 3px solid #59071D;
+  }
+
+
+  
