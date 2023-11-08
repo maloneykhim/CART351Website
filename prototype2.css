@@ -1,5 +1,5 @@
 body {
-    background-image: url(prototype-bg.png);
+    background-image: url(nightBG.png);
     background-size: 100%;
     overflow: hidden;
     font-family: 'Lexend', sans-serif;
@@ -28,19 +28,20 @@ body {
 .welcomeText {
     padding-right: 50px;
     max-width: 350px;
+    color: white;
 }
 
 .welcomeTitle1 {
     font-weight: 600;
     font-size: 1.8rem;
-    color: #8C2540;
+    color: #FFD438;
     margin: 0;
 }
 
 .welcomeTitle2 {
     font-weight: 900;
     font-size: 2.5rem;
-    color: #8C2540;
+    color: #FFD438;
     margin: 0;
 }
   
@@ -58,10 +59,10 @@ body {
 }
 
 .welcomeButton {
-    background-color: #BBD9FF; 
-    border: 3px solid #4062B8;
+    background-color: #423BB9; 
+    border: 3px solid #FDADE0;
     border-radius: 4px;
-    color: black;
+    color: white;
     padding: 15px;
     width: 150px;
     text-align: center;
@@ -81,15 +82,15 @@ body {
 }
 
 .welcomeButton:hover {
-    background-color: #F5DADA; 
-    border: 3px solid #59071D;
+    background-color: #E78A9C; 
+    border: 3px solid #FDADE0;
   }
 
 
 
 /* Toggle button */
 
-label {
+/* label {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -128,13 +129,13 @@ input {
 }
 
 input:checked + label {
-    background:linear-gradient(90deg, #f38a9f, #d8669041) ;
+    background:linear-gradient(90deg, #4452d20e, #000532) ;
 }
 
 input:checked + label:after{
     left: 170px;
     transform: translateX(-100%);
-    background: transparent;
+    background: #000532;
 }
 
 label:active:after{
@@ -156,18 +157,61 @@ label svg.moon{
 
 input:checked+ label svg.moon{
     fill: #ffffff;
-}
-
-/* .background{
-    height: 100vh;
-    width: 100vw;
-    margin: 0px;
-
-}
-
-input:checked + label + .background{
-    background-image: url(night_bg.jpg);
-    background-size: 100%;
-    overflow: hidden;
 } */
-    
+
+/* Reversed toggle label appearance and animation */
+
+label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #4452d20e, #000532); /* Reverse the gradient colors */
+    border: 2px solid #ffffff;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label:after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 10px;
+    left: 115px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Fix the typo in rgba */
+    transition: 0.3s;
+}
+
+/* Reverse the animation direction */
+input:checked + label:after {
+    transform: translateX(-200%);
+    background: #DFFFFF;
+}
+
+label:active:after {
+    width: 75px;
+}
+
+/* Reversed moon icon animation */
+label svg.moon {
+    position: absolute;
+    width: 70px;
+    top: 0px;
+    z-index: 100;
+    left: 108px; /* Adjust the initial position for reversed animation */
+    fill: #DFFFFF;
+    transition: 0.3s;
+}
+
+input:checked + label svg.moon {
+    fill: #ffffff;
+}

@@ -1,49 +1,64 @@
 body {
-    background-image: url(prototype-bg.png);
+    background-image: url(beginBG.png);
     background-size: 100%;
     overflow: hidden;
     font-family: 'Lexend', sans-serif;
 }
   
-.container {
+.galleryBox {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-46%, -47%);
+    transform: translate(-46%, -55%);
+    height: 375px;
+    width: 700px;
+    border: 5px solid #E78A9C;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(235, 133, 182, 0.625) 0%, rgba(235,133,182,0) 70%);
+    overflow-y: scroll; /* Enable vertical scrolling */
     display: flex;
-    align-items: center; /* Center vertically */
-    height: 60vh; 
-    width: 50vw;
-  }
-
-.welcomeItem {
-    padding-left: 50px;
-    padding-bottom: 75px;
+    justify-content: center;
+    align-items: center;
 }
 
-.welcomeImage {
-    height: 45vh;
+.smileyface {
+    width: 8vw;
 }
 
-.welcomeText {
-    padding-right: 50px;
-    max-width: 350px;
+.promptBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(120%, -50%);
 }
 
-.welcomeTitle1 {
-    font-weight: 600;
-    font-size: 1.8rem;
+.promptWindow {
+    width: 15vw;
+}
+
+.promptTextbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(150%, -35%);
+    height: 200px;
+    width: 200px;
+}
+
+.promptTitle {
+    font-weight: 700;
+    font-size: 2rem;
     color: #8C2540;
     margin: 0;
 }
 
-.welcomeTitle2 {
-    font-weight: 900;
-    font-size: 2.5rem;
+.promptQuestion {
+    font-weight: 400;
+    font-size: 1rem;
     color: #8C2540;
-    margin: 0;
+    margin-top: 10px;
 }
-  
+
 
 .welcomeButtons {
     position: absolute;
@@ -63,7 +78,7 @@ body {
     border-radius: 4px;
     color: black;
     padding: 15px;
-    width: 150px;
+    max-width: 250px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
